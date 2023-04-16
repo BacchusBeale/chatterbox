@@ -47,33 +47,7 @@ class ChatBot():
                 max_tokens=maxTokens,
                 n=numCompletions
             )
-            # hdr = {
-            #     "Content-Type: application/json",
-            #     f"Authorization: Bearer {self.apikey}"
-            # }
-            # url = 'https://api.openai.com/v1/chat/completions'
-
-            # data = {
-            #     "model": modelName,
-            #     "messages": messages,
-            #     "temperature":temperature,
-            #     "max_tokens":maxTokens,
-            #     "n":numCompletions,
-            #     "echo":echo
-            # }
-
-            # print(json.dumps(data),"\n============\n")
             
-            # response = requests.post(
-            #     url=url,
-            #     headers=hdr,
-            #     json=data
-            # )
-
-            # status = response.status_code
-            # print(f"status: {status}")
-            # if status>299:
-            #     raise BaseException(f"Error {response.reason}")
         except BaseException as e:
             self.lastError=f"Bot error: {e}"
             print(self.lastError)
@@ -120,8 +94,8 @@ def runChatCompletion():
     #completionId="text-davinci-edit-003"
     
     temp=1
-    numTokens=1000
-    numCompletions=3
+    numTokens=2048
+    numCompletions=1
 
     talkToBot = True
     x = input("Enter text for completion \nEnter q to quit\n\nTalk to bot (y/n)?")
@@ -144,12 +118,9 @@ def runChatCompletion():
         chatHistory += msg.content+'\n'
         msg.role = ChatMessage.USER_ROLE
         msgList.append(msg.toDict())
-
-        print("Your message: ", msgList, "\n")
-        print(msgList)
         
         with open('chathistory.txt', 'a') as h:
-            h.write(f"User: {userInput}")
+            h.write(f"User: {userInput}\n")
 
         botReply = bot.doChatCompletion(
             messages=msgList,
@@ -161,13 +132,19 @@ def runChatCompletion():
 
         if botReply:
             print(f"bot:")
-            print(botReply)
-            with open('bot.json', 'a') as f:
-                json.dump(botReply, f, indent=4)
-
+            answers = botReply["choices"]
+            numAnswers=len(answers)
+            print(f"Num answers: {numAnswers}")
+            for a in answers:
+                m=a["message"]
+                botMsg = ChatMessage()
+                botMsg.role=m["role"]
+                botMsg.content=m["content"]
+                out = f"{botMsg.role}: {botMsg.content}"
+                print(out+"\n")
+                with open('chathistory.txt', 'a') as h:
+                    h.write(f"{out}\n")
             
-
-        return # test one
 
     print("\n\nGoodbye, have a nice day!\n")
 
