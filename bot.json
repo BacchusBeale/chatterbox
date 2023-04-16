@@ -1,0 +1,37 @@
+{
+    "id": "chatcmpl-75tlqh4IIA55Um9NMfCmZvaIkOudk",
+    "object": "chat.completion",
+    "created": 1681640378,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 177,
+        "total_tokens": 204
+    },
+    "choices": [
+        {
+            "message": {
+                "role": "assistant",
+                "content": "Australia was first discovered by Aboriginal people who had been living on the continent for tens of thousands of years before the arrival of European explorers. However, the Dutch explorer Willem Janszoon is generally credited with the first known European sighting of Australia in 1606, almost 160 years before Captain Cook claimed it for Britain in 1770."
+            },
+            "finish_reason": "stop",
+            "index": 0
+        },
+        {
+            "message": {
+                "role": "assistant",
+                "content": "The first recorded European sighting of Australia was made by Dutch navigator Willem Janszoon, who saw the western coast of Cape York Peninsula in 1606. However, it is believed that Indigenous Australians have inhabited the continent for over 60,000 years prior to this."
+            },
+            "finish_reason": "stop",
+            "index": 1
+        },
+        {
+            "message": {
+                "role": "assistant",
+                "content": "The first recorded European discovery of Australia was made by the Dutch navigator Willem Janszoon in 1606. However, it is important to note that Australia had been inhabited by Indigenous peoples for tens of thousands of years prior to this discovery."
+            },
+            "finish_reason": "stop",
+            "index": 2
+        }
+    ]
+}
