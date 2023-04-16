@@ -33,10 +33,10 @@ def runChatCompletion():
         option = input("\n".join(menu))
         if option.strip() in valid:
             index = int(option)-1
-            if index>=0 and index<=3:
+            if index>=0 and index<=2:
                 msgsys.content = menu[index]
             else:
-                sysText = input("Enter system instructions")
+                sysText = input("Enter system instructions> ")
                 msgsys.content = sysText
 
             msgsys.role = ai.ChatMessage.SYSTEM_ROLE
@@ -45,7 +45,7 @@ def runChatCompletion():
             break
 
         print('\n')
-        userInput = input("user query>")
+        userInput = input("user query> ")
         
         msg = ai.ChatMessage()
         msg.content = userInput
