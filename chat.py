@@ -5,8 +5,8 @@ import os
 
 def runChatCompletion():
     mykey = os.getenv("OPENAI_API_KEY")
-    bot = ai.Bot()
-    modelGpt4 = ai.CHAT_MODEL_GPT4
+    bot = ai.Bot(apikey=mykey)
+    modelGpt4 = ai.CHAT_MODEL_GPT35_TURBO
 
     temp=1
     numTokens=2048
@@ -33,9 +33,16 @@ def runChatCompletion():
         option = input("\n".join(menu))
         if option.strip() in valid:
             index = int(option)-1
-            msgsys.content = menu[index]
+            if index>=0 and index<=3:
+                msgsys.content = menu[index]
+            else:
+                sysText = input("Enter system instructions")
+                msgsys.content = sysText
+
             msgsys.role = ai.ChatMessage.SYSTEM_ROLE
             msgList.append(msgsys.toDict())
+        else:
+            break
 
         print('\n')
         userInput = input("user query>")

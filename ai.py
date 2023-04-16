@@ -2,7 +2,7 @@ import openai
 import os
 import json
 
-CHAT_MODEL_GPT4 = 'gpt-4'
+CHAT_MODEL_GPT4 = 'gpt-4' # does not exist
 CHAT_MODEL_GPT35_TURBO = 'gpt-3.5-turbo'
 EDIT_MODEL_DAVINCI = 'text-davinci-edit-001'
 AUDIO_MODEL_WHISPER = 'whisper-1'
