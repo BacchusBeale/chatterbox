@@ -4,6 +4,7 @@ import base64
 import os
 from PIL import Image
 import io
+import uuid
 
 def aiImageMaker(userText, imgDir, pngFileName, imgCount=1):
     print("aiImageMaker")
@@ -17,8 +18,8 @@ def aiImageMaker(userText, imgDir, pngFileName, imgCount=1):
             imgSize=1024
         )
 
-        prefix = "result"
-        n=0
+        prefix = "ai"
+        
         if reply:
             with open('imagedata.json', 'w') as i:
                 json.dump(reply, i, indent=4)
@@ -32,13 +33,15 @@ def aiImageMaker(userText, imgDir, pngFileName, imgCount=1):
                 with open('b64code.txt','w') as f:
                     f.write(b64image)
 
-                imgName = f"{prefix}_{n}_{pngFileName}"
+                uid = str(uuid.uuid1())
+                imgName = f"{prefix}_{uid}_{pngFileName}"
                 imgbytes = base64.b64decode(b64image)
                 buf = io.BytesIO(imgbytes)
 
                 img = Image.open(buf)
                 imgFilePath = os.path.join(imgDir, imgName)
                 img.save(imgFilePath)
+
 
     except BaseException as e:
         print(f"Error: {e}")
