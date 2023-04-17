@@ -43,6 +43,7 @@ def aiImageMaker(userText, imgDir, pngFileName):
 
 def runImageBot():
     print("Welcome to Image AI Bot\n")
+    print("====================\n")
     y='y'
     imgpath = "C:\\pix"
     count=0
@@ -51,7 +52,8 @@ def runImageBot():
         y=input("Do you want AI to make an image (y=yes, else no)?")
         if y.strip() != 'y':
             break
-
+        
+        print("\n")
         x = input("Enter text to describe your image> ")
 
         imgName=f"ai_img{count}.png"
@@ -63,6 +65,11 @@ def runImageBot():
         )
 
         out = "Image saved!" if ok else "Request failed!"
+        print(out+"\n")
+
+        count += 1
+        
+        print("====================\n")
 
     print("Have a nice day!")
 
