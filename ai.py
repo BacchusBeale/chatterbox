@@ -81,3 +81,26 @@ class Bot():
             print(self.lastError)
             self.success=False
         return response
+    
+    def editAnImage(self,
+                    originalImage,
+                    userText,
+                    numImages=1,
+                    imgSize=1024):
+        response={}
+        try:
+
+            openai.api_key = self.apikey
+            response = openai.Image.create(
+                image=open(originalImage, 'rb'),
+                prompt=userText,
+                n=numImages,
+                size=f"{imgSize}x{imgSize}",
+                response_format="b64_json"
+            )
+            
+        except BaseException as e:
+            self.lastError=f"Bot error: {e}"
+            print(self.lastError)
+            self.success=False
+        return response
