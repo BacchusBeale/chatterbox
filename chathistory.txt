@@ -77,3 +77,14 @@ assistant: A parrot named Tori walks into a bar and orders a pint of lager. The 
 User: Sheldon Cooper and Penny at the Cheesecake factory
 User: a kangaroo in a grass with gum trees and a billabong 
 User: particles going through double slits and producing an interference pattern
+assistant: 1. Camera starts recording video of the car park area
+2. License plate recognition software scans the video image and detects license plates in view
+3. License plate numbers are compared against a database of authorized vehicles allowed to park in the area
+4. If the license plate number is not recognized in the authorized list or the car has stayed over the allotted time, the software will raise an alert
+5. The software will timestamp the entry and exit time of each vehicle to calculate the duration of their stay
+6. If a car has stayed over the allotted time, the software will trigger an alert to the parking enforcement personnel
+7. Parking enforcement personnel will receive alerts via email, SMS or push notifications on their mobile device
+8. The software will maintain a log of all the vehicles entering and exiting the car park area as well as the duration of their stay
+9. All the data recorded by the software will be saved onto a database for historical analysis and audit purposes.
+10. The software will continuously monitor and scan the car park area for any unauthorized or overstaying vehicles.
+assistant: If I use all my logic, I'd call it super docious fragilistic expiali cali rupus!

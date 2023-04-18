@@ -53,7 +53,7 @@ def runChatCompletion():
         msg.role = ai.ChatMessage.USER_ROLE
         msgList.append(msg.toDict())
         
-        with open('chathistory.txt', 'a') as h:
+        with open('chathistory2.txt', 'a') as h:
             h.write(f"User: {userInput}\n")
 
         botReply = bot.doChatCompletion(

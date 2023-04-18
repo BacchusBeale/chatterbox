@@ -1,0 +1,2 @@
+User: a PTZ camera is looking at a row of car parking space and needs to use license plate recognition, time and date to determine if a car has stayed overtime
+User: supercalifragilisticexpialidocious
