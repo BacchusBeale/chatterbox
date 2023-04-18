@@ -75,3 +75,5 @@ There are a total of 24 factors of 360.
 User: a parrot named tori
 assistant: A parrot named Tori walks into a bar and orders a pint of lager. The bartender asks, "Can you speak?" Tori replies, "Of course I can speak, can't you see me ordering a drink?"
 User: Sheldon Cooper and Penny at the Cheesecake factory
+User: a kangaroo in a grass with gum trees and a billabong 
+User: particles going through double slits and producing an interference pattern

@@ -53,7 +53,7 @@ def doUserImageEdit(userText, imgDir, pngFileIn, pngFileOut,
 def runEditBot():
     print("runEditBot")
     imgpath = "C:\\pix"
-    pngFile = 'test1.png'
+    pngFile = 'road.PNG'
     pngpath = os.path.join(imgpath, pngFile)
 
     img = Image.open(pngpath)
@@ -69,7 +69,7 @@ def runEditBot():
         srcImagePath = newImgPath
 
 
-    instructions = 'draw yellow rectnagles around all the persons in the image'
+    instructions = 'draw a red sports car on the road'
     res = doUserImageEdit(
         userText=instructions,
         imgDir=imgpath,

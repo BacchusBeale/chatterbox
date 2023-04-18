@@ -91,7 +91,7 @@ class Bot():
         try:
 
             openai.api_key = self.apikey
-            response = openai.Image.create(
+            response = openai.Image.create_edit(
                 image=open(originalImage, 'rb'),
                 prompt=userText,
                 n=numImages,
