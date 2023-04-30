@@ -1,2 +1,6 @@
 User: a PTZ camera is looking at a row of car parking space and needs to use license plate recognition, time and date to determine if a car has stayed overtime
 User: supercalifragilisticexpialidocious
+User: if Bob bought 5 apples for $1.20 each, how much change will he get from $10?
+User: peter rabbit entered Mr Gregor's garden
+User: chicken, red peppers, garlic, onions, and staple pantry items
+User: software developer with skills in Python and data analysis

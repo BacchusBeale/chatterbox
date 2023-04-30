@@ -88,3 +88,87 @@ assistant: 1. Camera starts recording video of the car park area
 9. All the data recorded by the software will be saved onto a database for historical analysis and audit purposes.
 10. The software will continuously monitor and scan the car park area for any unauthorized or overstaying vehicles.
 assistant: If I use all my logic, I'd call it super docious fragilistic expiali cali rupus!
+assistant: First, let's calculate how much money Bob spent on the 5 apples:
+$1.20/apple x 5 apples = $6.00
+So Bob spent $6.00 on the 5 apples.
+
+To calculate how much change Bob will get from $10, we need to subtract the amount he spent from the amount he paid:
+$10.00 - $6.00 = $4.00
+
+Therefore, Bob will get $4.00 in change from his $10.00 bill after buying the 5 apples.
+assistant: Peter Rabbit hopped with glee
+As he entered Mr. Gregor's garden with glee
+The lush greenery and colorful flowers,
+Were just too tempting to ignore for hours.
+
+He nibbled on carrots and fresh lettuce leaves
+And dug out holes in the soil with ease.
+With his fluffy tail and twitching nose,
+He roamed around, as nobody knows.
+
+But soon, he heard Mr. Gregor's voice nearby,
+He knew he had to leave and not stay dry.
+With a sprint and a leap, he ran for his life 
+And escaped from the garden without a single strife.
+
+As he hopped back home, with a happy heart,
+He knew he'd had his fill of a good start.
+He snuggled in his burrow, feeling content,
+And dreamt of more adventures yet to be spent.
+assistant: Recipe: Chicken with Red Peppers and Garlic
+
+Ingrediants:
+- 4 chicken breasts
+- 2 red peppers
+- 4 cloves garlic
+- 1 large onion
+- 2 tbsp olive oil
+- Salt and pepper, to taste
+- 1 tsp paprika
+- 1 tsp oregano
+- 1 cup chicken broth
+- 2 tbsp flour
+- 1 tbsp butter
+- Parsley, for garnish
+
+Directions:
+
+1. Preheat oven to 375°F.
+
+2. Cut the red peppers into 1-inch pieces and slice garlic into thin strips. Set aside.
+
+3. Slice the onion into thin strips.
+
+4. Heat olive oil in a large skillet over medium-high heat.
+
+5. Season chicken breasts with salt, pepper, paprika, and oregano. Add chicken breasts to the skillet and brown on both sides, about 3-4 minutes per side. Transfer chicken breasts to a plate and set aside.
+
+6. Add onions, garlic, and red peppers to the skillet and sauté until tender, about 5-7 minutes.
+
+7. Whisk together chicken broth and flour in a small bowl. Add the mixture to the skillet and bring to a boil.
+
+8. Reduce heat and simmer for 2-3 minutes, or until the sauce has thickened.
+
+9. Return chicken breasts to the skillet and top with the red pepper mixture.
+
+10. Cut butter into small pieces and dot on top of the chicken and vegetables.
+
+11. Bake in the preheated oven for 20-25 minutes, or until chicken is cooked through.
+
+12. Garnish with parsley and serve hot. Enjoy!
+
+Optional: Serve with a side of steamed rice or roasted potatoes.
+assistant: Dear Hiring Manager,
+
+I am excited to express my strong interest in the position of Software Developer with skills in Python and data analysis that is currently available within your organization. With my solid foundation in software development, combined with my expertise in Python programming and data analysis, I am confident that I possess the necessary qualifications and abilities to excel in this role.
+
+Throughout my career in software development, I have gained extensive experience in developing and implementing high-quality software applications that meet the needs of businesses across various industries. My proficiency in Python programming and data analysis has enabled me to develop efficient and innovative software solutions that have improved the performance and productivity of numerous businesses. Additionally, my technical expertise in data visualization and machine learning algorithms has allowed me to contribute substantially to the development of data-driven solutions.
+
+As a dedicated and driven individual, I am committed to developing and implementing high-quality software solutions that surpass the expectations of both clients and colleagues. Furthermore, my ability to effectively communicate complex concepts to technical and non-technical stakeholders demonstrates my skills in collaboration and teamwork, which are essential for success in any software development role.
+
+I believe that my skills and experience align well with the requirements of this position, and I am eager to contribute to your organization's mission and objectives. Thank you for considering my application, and I look forward to the opportunity to discuss my suitability for the role.
+
+Sincerely,
+
+[Your Name]
+User: last supper painting with star wars characters

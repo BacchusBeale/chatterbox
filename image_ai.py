@@ -6,7 +6,7 @@ from PIL import Image
 import io
 import uuid
 
-def aiImageMaker(userText, imgDir, pngFileName, imgCount=1):
+def aiImageMaker(userText, imgDir, pngFileName, imgSize=256, imgCount=1):
     print("aiImageMaker")
     try:
         mykey = os.getenv("OPENAI_API_KEY")
@@ -15,7 +15,7 @@ def aiImageMaker(userText, imgDir, pngFileName, imgCount=1):
         reply = bot.createImages(
             userText=userText,
             numImages=imgCount,
-            imgSize=1024
+            imgSize=imgSize
         )
 
         prefix = "ai"
