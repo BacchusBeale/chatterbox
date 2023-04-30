@@ -33,8 +33,7 @@ def aiImageMaker(userText, imgDir, pngFileName, imgSize=256, imgCount=1):
                 with open('b64code.txt','w') as f:
                     f.write(b64image)
 
-                uid = str(uuid.uuid1())
-                imgName = f"{prefix}_{uid}_{pngFileName}"
+                imgName = f"{pngFileName}"
                 imgbytes = base64.b64decode(b64image)
                 buf = io.BytesIO(imgbytes)
 
@@ -87,4 +86,4 @@ def runImageBot():
 
     print("Have a nice day!")
 
-runImageBot()
+#runImageBot()

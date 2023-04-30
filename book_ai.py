@@ -36,6 +36,13 @@ def addIllustratedPage(bookPdfFile, text, pngImageFile, isNewBook):
     writer.add_page(pdfPage)
     writer.write(pdfPage)
 
+def saveLog(text, logFile="book.log", overwrite=False):
+    mode='a'
+    if overwrite:
+        mode='w'
+        
+    with open(logFile, mode=mode) as log:
+        log.write(text+"\n")
 
 def bookmaker():
     bookDir="./book"
@@ -43,23 +50,31 @@ def bookmaker():
     y = input("Start writing a new book (y/n)? ")
     if y!='y':
         print("Have a nice day!")
+        exit(0)
+
+    log="./book/demo.log"
 
     fileName = input("Enter file name: ")
     fileName += ".pdf"
+    saveLog(fileName, logFile=log, overwrite=True)
     bookTitle = input("Enter the book title: ")
+    saveLog(bookTitle, logFile=log, overwrite=False)
     bookDescription = input("Type a description: ")
+    saveLog(bookDescription, logFile=log, overwrite=False)
     yourCharacter = input("Type your character name: ")
+    saveLog(yourCharacter, logFile=log, overwrite=False)
     botsCharacter = input("Type bot's chararcter name: ")
-
+    saveLog(botsCharacter, logFile=log, overwrite=False)
     serverInstruction = f"Assistant please, write dialogue for {botsCharacter}, given the current story."
-
+    saveLog(serverInstruction, logFile=log, overwrite=False)
     illustratorInstruction = "Draw an Illustration for this page. "
-
+    saveLog(illustratorInstruction, logFile=log, overwrite=False)
     bookPath = os.path.join(bookDir, fileName)
     print(f"Creating {bookPath}")
     pageNum=0
 
     pngImageName = f"illustration{pageNum}.png"
+    saveLog(pngImageName, logFile=log, overwrite=False)
     print(f"Make image: {pngImageName}")
     # make book cover
     image_ai.aiImageMaker(
