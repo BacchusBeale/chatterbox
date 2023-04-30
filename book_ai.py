@@ -3,6 +3,7 @@ import image_ai
 import os
 import fpdf
 from PyPDF2 import PdfReader, PdfWriter
+import uuid
 
 def addIllustratedPage(bookPdfFile, text, pngImageFile, isNewBook):
     print("addIllustratedPage")
@@ -18,23 +19,8 @@ def addIllustratedPage(bookPdfFile, text, pngImageFile, isNewBook):
     book.ln(h=2)
     book.image(name=pngImageFile)
 
-    pdfPage = book.output()
-
-    existingPages = None
-    numPages = 0
+    book.output("F", bookPdfFile)
     
-    if not isNewBook:
-        reader = PdfReader(bookPdfFile)
-        numPages = reader.getNumPages()
-        print(f"num pages: {numPages}")
-        existingPages = reader.pages
-
-    writer = PdfWriter(bookPdfFile)
-    for page in existingPages:
-        writer.add_page(page)
-
-    writer.add_page(pdfPage)
-    writer.write(pdfPage)
 
 def saveLog(text, logFile="book.log", overwrite=False):
     mode='a'
@@ -45,7 +31,7 @@ def saveLog(text, logFile="book.log", overwrite=False):
         log.write(text+"\n")
 
 def bookmaker():
-    bookDir="./book"
+    bookDir="C:\\Temp"
     print("Welcome, to Book Maker!\n=========\n")
     y = input("Start writing a new book (y/n)? ")
     if y!='y':
@@ -85,10 +71,11 @@ def bookmaker():
         imgCount=1
     )
 
+    imagePath = os.path.join(bookDir, pngImageName)
     addIllustratedPage(
         bookPdfFile=bookPath,
         text=bookTitle,
-        pngImageFile=pngImageName,
+        pngImageFile=imagePath,
         isNewBook=True
     )
 
